@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+</head>
+<body bgcolor="beige">
+    <header>
+        <center>
+            <h1><font face="Arial" color="blue">Bienvenido a mi Página Web</font></h1>
+            <h3><font face="Georgia" color="darkred">Marroquinería y Mantenimiento de Máquinas</font></h3>
+        </center>
+        <center>
+            <nav>
+                <font face="Arial" size="4" color="darkblue">
+                    <a href="#inicio">Inicio</a> |
+                    <a href="#formulario">Formulario</a> |
+                    <a href="#imagenes">Imágenes</a> |
+                    <a href="#servicios">Servicios</a> |
+                    <a href="#tabla">Tabla</a> |
+                    <a href="#video">Video</a>
+                </font>
+            </nav>
+        </center>
+        <hr>
+    </header>
+    <section id="inicio">
+        <center>
+            <p><font face="Georgia" size="3">Aquí encontrarás información sobre 
+                <b>marroquinería</b> y <u><font color="darkgreen">mantenimiento de máquinas</font></u>.</font></p>
+        </center>
+    </section>
+    <hr>
+    <section id="formulario">
+        <h2><font color="green">Formulario de Registro</font></h2>
+        <form>
+            <label for="nombre"><font face="Verdana">Nombre:</font></label>
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="50" required placeholder="Escribe tu nombre"><br><br>
+
+            <label for="correo"><font face="Verdana">Correo:</font></label>
+            <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com"><br><br>
+
+            <label for="fecha"><font face="Verdana">Fecha de registro:</font></label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label><font face="Verdana">Género:</font></label><br>
+            <input type="radio" name="genero" value="masculino"> Masculino
+            <input type="radio" name="genero" value="femenino"> Femenino
+            <input type="radio" name="genero" value="otro"> Otro <br><br>
+
+            <label><font face="Verdana">Intereses:</font></label><br>
+            <input type="checkbox" name="interes1"> Marroquinería
+            <input type="checkbox" name="interes2"> Mantenimiento de máquinas
+            <input type="checkbox" name="interes3"> Otros <br><br>
+
+            <label for="mensaje"><font face="Verdana">Mensaje:</font></label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40" required placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+<button type="submit" style="background-color:green; color:white; font-size:14px; padding:8px 15px; border-radius:8px;">✅ Enviar</button>
+            <button type="reset" style="background-color:red; color:white; font-size:14px; padding:8px 15px; border-radius:8px;">❌ Limpiar</button>
+        </form>
+    </section>
+    <hr>
+<section id="imagenes">
+        <h2><font color="purple">Galería de Imágenes</font></h2>
+
+        <p><b>Imagen Local :</b></p>
+        
+            <img src="maxresdefault (1).jpg" width="200">
+        </a><br><br>
+
+        <p><b>Imagen desde Internet:</b></p>
+        <a href="https://textilycuero.blogspot.com/2018/11/formacion-de-calidad.html" target="_blank">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzX5uOtDj9dkbYKm71aFi0yDRWipwKbFv0TC5RXHlNgC6gNLGJIAH7vhoXTi-EkvfnpeKuXWUxhgMAu_IevF0xygZVQ3F4KBSFLETcQITqJaS4dLJIx9M0t8Sgt__5-HK_jisi-81Ko4o/s1600/1.jpg" 
+                 alt="marroquinería" width="400">
+        </a><br><br>
+
+        <p><b>Imagen con Hipervínculo externo (SENA):</b></p>
+        <a href="https://www.sena.edu.co/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTlt8LLMIhvxI5Z4xhmrGw1AknxbRYaJ_43A&s" 
+                 alt="SENA" width="200">
+        </a>
+    </section>
+    <hr>
+<section id="servicios">
+        <h2><font color="brown">Nuestros Servicios</font></h2>
+        <ul>
+            <li>Diseño y confección de <b>marroquinería</b> (bolsos, cinturones, billeteras).</li>
+            <li><b>Mantenimiento de máquinas</b> industriales y de confección.</li>
+            <li>Asesoría técnica en procesos de producción.</li>
+        </ul>
+    </section>
+    <hr>
+<section id="tabla">
+        <h2><font color="red">Tabla de Productos</font></h2>
+        <table border="2" cellpadding="10" cellspacing="0" align="center">
+            <tr bgcolor="lightblue">
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>👜 Billetera de cuero</td>
+                <td>Marroquinería</td>
+                <td>$50.000</td>
+            </tr>
+            <tr>
+                <td>👖 Cinturón de cuero</td>
+                <td>Marroquinería</td>
+                <td>$40.000</td>
+            </tr>
+            <tr>
+                <td>⚙️ Mantenimiento de máquina plana</td>
+                <td>Mantenimiento</td>
+                <td>$80.000</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+<section id="video">
+        <h2><font color="darkgreen">Video sobre Marroquinería</font></h2>
+        <center>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/uC0gF4rOo_s" 
+                    title="Video de marroquinería" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+            <br><br>
+            <a href="https://www.youtube.com/watch?v=uC0gF4rOo_s" target="_blank">
+                🎬 Ver el video directamente en YouTube
+            </a>
+        </center>
+    </section>
+    <hr>
+<footer>
+        <center>
+            <p><font face="Arial" size="2" color="gray">© 2025 - Página creada por Estudiante SENA | Todos los derechos reservados</font></p>
+        </center>
+    </footer>
+
+</body>
+</html>
+
+
